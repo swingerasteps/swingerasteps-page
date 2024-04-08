@@ -10,6 +10,11 @@ module.exports = {
       colors: {
         primary: "var(--color-primary)",
         secondary: "var(--color-secondary)",
+        'white': '#ffffff',
+        'brown': '#d16405',
+        'orange': '#ff9f1c',
+        'mint': '#cbf3f0',
+        'green': '#2ec4b6',
       },
       textColor: {
         default: "var(--color-text)",
@@ -23,9 +28,6 @@ module.exports = {
         default: "var(--color-border)",
       },
     },
-  },
-  corePlugins: {
-    fontSize: false,
   },
   plugins: [require("tailwindcss-fluid-type")],
 };

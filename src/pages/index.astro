@@ -42,7 +42,7 @@ const description =
         document.documentElement.dataset.theme = themeSaved;
       } else {
         const prefersDark = window.matchMedia(
-          "(prefers-color-scheme: light)",
+          "(prefers-color-scheme: dark)",
         ).matches;
         document.documentElement.dataset.theme = prefersDark ? "dark" : "light";
       }
