@@ -1,7 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
-import astronautImage from "~/assets/astronaut.png";
+import shoes from "~/assets/shoes.png";
+import logoreverse from "~/assets/logo-reverse.png";
 import HeroImage from "~/components/hero-image.astro";
 
 const widths = [450, 800];
@@ -12,7 +13,23 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     <h2
       class="flex flex-col items-center gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
     >
-      <Icon name="piano" class="size-24 text-grey md:size-32" />
+
+	<Image
+        class="max-w-prose object-cover"
+        src={shoes}
+        widths={widths}
+        sizes={sizes}
+        loading="eager"
+        alt="A pair of shoes"
+      />
+	<Image
+        class="max-w-prose object-cover"
+        src={logoreverse}
+        widths={widths}
+        sizes={sizes}
+        loading="eager"
+        alt="A pair of shoes"
+      />
       <div
         class="gradient-text text-center font-extrabold tracking-tighter text-8xl"
       >
