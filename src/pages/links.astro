@@ -10,6 +10,7 @@ import Splash from "~/components/splash.astro";
 import Card from "../components/card.astro";
 import Chip from "../components/chip.astro";
 import logoreverse from "~/assets/logo-reverse.png";
+import logo from "~/assets/logo.png";
 import { Image } from "astro:assets";
 import "~/styles/index.css";
 
@@ -107,13 +108,13 @@ const links: Link[] = [
   >
 <main class='w-[80%] flex flex-col gap-8'>
 
-
 <div class="flex justify-center items-center">
-    <Image class="max-w-[400px]" src={logoreverse} alt="A pair of shoes">
+<Image class="max-w-[400px] block dark:hidden" src={logo} alt="A pair of shoes">
 </div>
 
-
-
+<div class="flex justify-center items-center">
+    <Image class="max-w-[400px] hidden dark:block" src={logoreverse} alt="A pair of shoes">
+</div>
 
       <div class='grid justify-center gap-4'>
         {

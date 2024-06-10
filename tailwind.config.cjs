@@ -30,4 +30,5 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-fluid-type")],
+variants: { extend: { display: ['dark'], } }
 };
